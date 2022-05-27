@@ -1,8 +1,8 @@
 
-'use strict'
+'use strict';
 
 //Задание 1
-/*
+
 for (let i = 0; i < 11; i++) {
 
 	if (i == 0) {
@@ -14,7 +14,7 @@ for (let i = 0; i < 11; i++) {
 	}
 
 }
-*/
+
 
 
 
