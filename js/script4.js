@@ -2,6 +2,12 @@
 
 //Задание 4
 
+/*
+Перед вами находится массив с продуктами в интернет-магазине. Вам нужно:
+1. Получить все товары, у которых есть фотографии, можете использовать метод filter https://mzl.la/2qROQkT
+2. Отсортируйте товары по цене (от низкой цены к высокой), можете использовать метод sort https://mzl.la/2Y79hbZ , как устроен sort можно посмотреть например здесь https://youtu.be/O2pusOp0gC0 или в дополнительных видео в материалах урока.
+*/
+
 const products = [
 	{
 		id: 3,
@@ -28,3 +34,7 @@ const products = [
 		price: 78,
 	},
 ];
+const photoYes = products.filter(function (image) {
+	return 'photos' in image && image.photos.length > 0;
+});
+console.log(photoYes);
