@@ -38,3 +38,22 @@ const photoYes = products.filter(function (image) {
 	return 'photos' in image && image.photos.length > 0;
 });
 console.log(photoYes);
+
+
+const sortProductsPrice = products.sort(function (a, b) {
+	if (a.price < b.price) {
+		return -1;
+	}
+
+	if (a.price > b.price) {
+		return 1;
+	}
+	return 0;
+	// или так:
+	// const sortProductsPrice = products.sort(function (a, b) {
+	// 	return a.price - b.price;
+	// });
+});
+console.log(sortProductsPrice);
+
+
